@@ -2,10 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6f44a18-cc1c-4640-a0a1-37c6ec2f4a94" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/image/bgFri.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/bgInputName.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/bgMon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/bgSat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/bgSun.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/bgThu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/bgTue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/bgWed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sound/Music.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sound/sound.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bingo/BingoGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bingo/BingoClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoClick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bingo/BingoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bingo/BingoScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoScore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/ChooseStageScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ChooseStageScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/DisplayRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/DisplayRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/InputNameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/InputNameScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/MainDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MainDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/StartScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/StartScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stage/FridayStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage/FridayStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage/MondayStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage/MondayStage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stage/SaturdayStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage/SaturdayStage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stage/SundayStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage/SundayStage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stage/ThursdayStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage/ThursdayStage.java" afterDir="false" />
@@ -36,20 +53,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/gigi/Desktop/BingoDaysGame-master&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/gigi/Desktop/BingoDaysGame-master/src/sound",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gigi\Desktop\BingoDaysGame-master\src\sound" />
+      <recent name="C:\Users\gigi\Desktop\BingoDaysGame-master\src\image" />
       <recent name="C:\Users\gigi\Documents\GitHub\BingoDaysGame\src\image" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -91,7 +110,7 @@
       <workItem from="1651218879884" duration="1582000" />
       <workItem from="1651220849968" duration="13882000" />
       <workItem from="1651235004732" duration="35000" />
-      <workItem from="1651239339687" duration="1353000" />
+      <workItem from="1651239339687" duration="11368000" />
     </task>
     <servers />
   </component>

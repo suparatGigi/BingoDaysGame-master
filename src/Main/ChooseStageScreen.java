@@ -15,7 +15,7 @@ public class ChooseStageScreen extends JPanel {
 
     public void paint(Graphics g){
         repaint();
-        Toolkit t = Toolkit.getDefaultToolkit();
+        Toolkit t = Toolkit.getDefaultToolkit(); //สร้าง Toolkit ไว้ import image
         Image bg = t.getImage("src/image/Bg3.png");
         Image xbutton = t.getImage("src/image/Xbutton.png");
         Image rebutton = t.getImage("src/image/rebutton.png");
@@ -69,20 +69,6 @@ public class ChooseStageScreen extends JPanel {
     }
 
     public ChooseStageScreen(){
-        /*
-        //create panel
-        chooseStageScreen = new JPanel();
-        chooseStageScreen.setBounds(0, 0, 1310, 715); //ขนาดรูป
-        chooseStageScreen.setBackground(Color.black);
-        chooseStageScreen.setLayout(null);
-        MainDisplay.window.add(chooseStageScreen);
-
-        //create Background
-        chooseStageBackground = new JLabel();
-        chooseStageBackground.setBounds(0, 0, 1310, 715);
-        ImageIcon bgIcon = new ImageIcon(getClass().getClassLoader().getResource("image/Bg3.png")); // เพิ่มBackground
-        chooseStageBackground.setIcon(bgIcon);
-*/
         //Monday button
         createMondayButton();
 

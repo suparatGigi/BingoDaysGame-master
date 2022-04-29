@@ -59,7 +59,7 @@ public class StartScreen extends JPanel {
     }
     public void paint(Graphics g){
         repaint();
-        Toolkit t = Toolkit.getDefaultToolkit();
+        Toolkit t = Toolkit.getDefaultToolkit(); //สร้าง Toolkit ไว้ import image
         Image i = t.getImage("src/image/Bg1.png");
         Image sb = t.getImage("src/image/startbutton.png");
         Image hb = t.getImage("src/image/howTOplaybutton.png");

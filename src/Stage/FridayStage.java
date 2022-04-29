@@ -13,7 +13,7 @@ public class FridayStage extends BingoGame {
         fridayBackground = new JLabel();
         fridayBackground.setBounds(0, 0, 1310, 715);
 
-        ImageIcon bgIcon = new ImageIcon(getClass().getClassLoader().getResource("image/Bg3.png")); // เพิ่มBackground
+        ImageIcon bgIcon = new ImageIcon(getClass().getClassLoader().getResource("image/bgFri.png")); // เพิ่มBackground
         fridayBackground.setIcon(bgIcon);
         add(fridayBackground);
     }

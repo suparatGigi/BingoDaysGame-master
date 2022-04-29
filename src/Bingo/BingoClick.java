@@ -9,7 +9,7 @@ public class BingoClick extends BingoGrid{
         super();
 
         indentX = 485;
-        indentY = 190;
+        indentY = 240;
         initializeGrid();
 
     }
@@ -61,11 +61,8 @@ public class BingoClick extends BingoGrid{
         //font anti-aliasing
         g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
 
-        int fontSize = 25; //font for everything else
+        int fontSize = 45; //font for everything else
         Font font = new Font("SansSerif", Font.PLAIN, fontSize);
-
-        int letterFont = 48; //font for B I N G O letters
-        Font font2 = new Font("SansSerif", Font.BOLD, letterFont);
 
         g2.setFont(font);
 
@@ -103,30 +100,16 @@ public class BingoClick extends BingoGrid{
                     else
                         g2.drawString(value + "", xCoord, yCoord);
                 }
-
-                //prints the letters D A Y S above the board
-                if (row == 0) {
-                    g2.setFont(font2);
-                    g2.drawString(BINGO[col], (int)square.getX() + (SQUARE_SIZE / 4), (int)square.getY() - (SQUARE_SIZE / 4) );
-                    g2.setFont(font);
-                }
             }
         }
 
         //prints meseage high score
-        String highScoreMessage = "HIGH SCORE :" + BingoScore.getHighScore();
-        g2.drawString(highScoreMessage, 1000, 50);
-
-
-        //prints meseage score you will get
-        String ScoreYouWillMessage = " SCORE YOU WII GET :" ;
-        g2.drawString(ScoreYouWillMessage, 100, 50);
-
-
+        String highScoreMessage = " " + BingoScore.getHighScore();
+        g2.drawString(highScoreMessage, 900, 60);
 
         //prints message if grid has won
         g2.setColor(Color.RED);
-        g2.drawString(winnerMessage, 100, 250);
+        g2.drawString(winnerMessage, 70, 300);
 
 
 

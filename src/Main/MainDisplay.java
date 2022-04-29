@@ -20,13 +20,5 @@ public class MainDisplay {
         //window.setLayout(null);
 
         window.add(new StartScreen());
-        //new Stage.MondayStage();
-        //new HowToPlayScreen();
-        //new ChooseStageScreen();
-
-
-
-
-
     }
 }

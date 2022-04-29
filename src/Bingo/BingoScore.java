@@ -3,7 +3,7 @@ package Bingo;
 import Main.ChooseStageScreen;
 
 public class BingoScore {
-    public static int highScore = 200;
+    public static int highScore = 0;
 
     public static void checkHighScore(){
         if (ChooseStageScreen.numStage == 1 && BingoGame.winner)   highScore += 20;
@@ -29,9 +29,7 @@ public class BingoScore {
         else  //"YOU UNLOCKED ALL LEVELS"
         return 0;
     }
-
-
-
+    
     public BingoScore(){
 
 

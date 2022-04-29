@@ -36,13 +36,10 @@ public class InputNameScreen  extends JPanel{
             @Override
             public void actionPerformed(ActionEvent e) {
                 window.getContentPane().removeAll();
-                //MainDisplay.window.add(new Stage.MondayStage());
                 MainDisplay.window.add(new ChooseStageScreen());
                 window.validate();
             }
         });
-
-
 
         setButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
@@ -57,7 +54,7 @@ public class InputNameScreen  extends JPanel{
     public void paint(Graphics g) {
         repaint();
         Toolkit t = Toolkit.getDefaultToolkit();
-        Image i = t.getImage("src/image/screen_InputName copy.png");
+        Image i = t.getImage("src/image/bgInputName.png");
         Image sb = t.getImage("src/image/setButton copy.png");
 
         g.drawImage(i, 0, 0, this);

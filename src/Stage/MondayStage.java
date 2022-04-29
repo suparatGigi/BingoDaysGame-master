@@ -13,21 +13,10 @@ public class MondayStage extends BingoGame {
         super();
 
         mondayBackground = new JLabel();
-        mondayBackground.setBounds(0, 0, 1310, 715);
+        mondayBackground.setBounds(0, 0, 1295, 715);
 
-        ImageIcon bgIcon = new ImageIcon(getClass().getClassLoader().getResource("src/image/Bg3.png")); // เพิ่มBackground
+        ImageIcon bgIcon = new ImageIcon(getClass().getClassLoader().getResource("image/bgMon.png")); // เพิ่มBackground
         mondayBackground.setIcon(bgIcon);
         add(mondayBackground);
     }
-    /*
-    public void paint(Graphics g) {
-        repaint();
-        Toolkit t = Toolkit.getDefaultToolkit();
-        Image bg = t.getImage("src/image/Bg3.png");
-
-        g.drawImage(bg, 0, 0, this);
-
-    }
-
-     */
 }
