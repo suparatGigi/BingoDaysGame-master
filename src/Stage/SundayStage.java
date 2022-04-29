@@ -15,7 +15,7 @@ public class SundayStage extends BingoGame {
         sundayBackground = new JLabel();
         sundayBackground.setBounds(0, 0, 1310, 715);
 
-        ImageIcon bgIcon = new ImageIcon(getClass().getClassLoader().getResource("src/image/Bg3.png")); // เพิ่มBackground
+        ImageIcon bgIcon = new ImageIcon(getClass().getClassLoader().getResource("image/Bg3.png")); // เพิ่มBackground
         sundayBackground.setIcon(bgIcon);
         add(sundayBackground);
     }

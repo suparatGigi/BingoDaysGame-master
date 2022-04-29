@@ -58,13 +58,13 @@ public class ChooseStageScreen extends JPanel {
         Font font = new Font("SansSerif", Font.PLAIN, fontSize);
         g2.setFont(font);
 
-        //prints message high score
-        String highScoreMessage = "HIGH SCORE :" + BingoScore.getHighScore();
-        g2.drawString(highScoreMessage, 700,50);
+        //prints message high score:
+        String highScoreMessage = " "+ BingoScore.getHighScore();
+        g2.drawString(highScoreMessage, 920,60);
 
         //prints message NEXT UNLOCKED
-        String nextUnlockMessage = "NEXT UNLOCKED AT :" + BingoScore.getNextUnlocked();
-        g2.drawString(nextUnlockMessage, 200,50);
+        String nextUnlockMessage = " " + BingoScore.getNextUnlocked();
+        g2.drawString(nextUnlockMessage, 450,60);
 
     }
 
