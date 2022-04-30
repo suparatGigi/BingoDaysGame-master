@@ -53,11 +53,11 @@ public class BingoNumbers extends JComponent {
         g2.setFont(font);
 
         String call = "Calling: ";
-        g2.drawString(call, 70, 200);
+        g2.drawString(call, 70, 225);
         if (!numbers.isEmpty()) {
             int number = numbers.get(numbers.size() - 1);
-            int xCoord = 230;
-            int yCoord = 220;
+            int xCoord = 240;
+            int yCoord = 230;
             g2.setFont(new Font("SansSerif", Font.BOLD, bigFont));
             if (number <= 15) {
                 g2.drawString("D-" + number, xCoord, yCoord);

@@ -5,16 +5,6 @@ import Main.ChooseStageScreen;
 public class BingoScore {
     public static int highScore = 1000;
 
-    public static void checkHighScore(){
-        if (ChooseStageScreen.numStage == 1 && BingoGame.winner)   highScore += 20;
-        else if (ChooseStageScreen.numStage == 2 && BingoGame.winner)  highScore += 30;
-        else if (ChooseStageScreen.numStage == 3 && BingoGame.winner)  highScore += 40;
-        else if (ChooseStageScreen.numStage == 4 && BingoGame.winner)  highScore += 50;
-        else if (ChooseStageScreen.numStage == 5 && BingoGame.winner)  highScore += 60;
-        else if (ChooseStageScreen.numStage == 6 && BingoGame.winner)  highScore += 70;
-        else if (ChooseStageScreen.numStage == 7 && BingoGame.winner)  highScore += 80;
-    }
-
     public static int getHighScore(){
         return highScore;
     }
