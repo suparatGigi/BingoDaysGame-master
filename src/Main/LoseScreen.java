@@ -27,8 +27,9 @@ public class LoseScreen extends JPanel {
         continueButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                setVisible(false);
-                BingoGame.bingoframe.dispose();
+                MainDisplay.window.getContentPane().removeAll();
+                MainDisplay.window.add(new ChooseStageScreen());
+                MainDisplay.window.validate();
             }
         });
 

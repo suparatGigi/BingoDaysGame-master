@@ -105,7 +105,7 @@ public class BingoClick extends BingoGrid{
 
         //prints meseage high score
         String highScoreMessage = " " + BingoScore.getHighScore();
-        g2.drawString(highScoreMessage, 900, 60);
+        g2.drawString(highScoreMessage, 1120,68);
 
         //prints message if grid has won
         g2.setColor(Color.RED);

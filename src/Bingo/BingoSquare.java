@@ -8,7 +8,7 @@ public class BingoSquare extends Rectangle {
     private boolean status; //true if the value has been called by the number generator
     private boolean isClicked; //true if the user has clicked on the box
     private static final int RANGE = 15; //range of the numbers per column.
-    //e.g., the B-column can only have numbers ranging from 1 to 15.
+    //e.g., the D-column can only have numbers ranging from 1 to 15.
     private boolean isWinner; //this square is part of the winning sequence
 
     private Random generator = new Random();

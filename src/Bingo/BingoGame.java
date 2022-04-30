@@ -64,57 +64,57 @@ public class BingoGame extends JFrame{
 
         //start
         panel.add(start);
-        start.setBounds(0, 0, 200, 89);
+        start.setBounds(0, 0, 230, 66);
         start.setBackground(null);
         start.setContentAreaFilled(false);
         start.setFocusPainted(false);
         start.setBorderPainted(false);
 
-        buttonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/startButton.png")); // เพิ่มรูปปุ่ม
+        buttonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/startbingo.png")); // เพิ่มรูปปุ่ม
         start.setIcon(buttonIcon);
 
         //stop
         panel.add(stop);
-        stop.setBounds(0, 0, 200, 89);
+        stop.setBounds(0, 0, 230, 66);
         stop.setBackground(null);
         stop.setContentAreaFilled(false);
         stop.setFocusPainted(false);
         stop.setBorderPainted(false);
 
-        buttonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/stopButton.png")); // เพิ่มรูปปุ่ม
+        buttonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/pause.png")); // เพิ่มรูปปุ่ม
         stop.setIcon(buttonIcon);
-
-        //reset
-        panel.add(reset);
-        reset.setBounds(200, 0, 200, 89);
-        reset.setBackground(null);
-        reset.setContentAreaFilled(false);
-        reset.setFocusPainted(false);
-        reset.setBorderPainted(false);
-
-        buttonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/resetButton.png")); // เพิ่มรูปปุ่ม
-        reset.setIcon(buttonIcon);
 
         //bingo
         panel.add(bingo);
-        bingo.setBounds(500, 0, 200, 89);
+        bingo.setBounds(500, 0, 230, 66);
         bingo.setBackground(null);
         bingo.setContentAreaFilled(false);
         bingo.setFocusPainted(false);
         bingo.setBorderPainted(false);
 
-        buttonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/bingoButton.png")); // เพิ่มรูปปุ่ม
+        buttonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/bingo_new.png")); // เพิ่มรูปปุ่ม
         bingo.setIcon(buttonIcon);
 
-        //nextnum
+        //reset
+        panel.add(reset);
+        reset.setBounds(200, 0, 230, 66);
+        reset.setBackground(null);
+        reset.setContentAreaFilled(false);
+        reset.setFocusPainted(false);
+        reset.setBorderPainted(false);
+
+        buttonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/reset.png")); // เพิ่มรูปปุ่ม
+        reset.setIcon(buttonIcon);
+
+        //random
         panel.add(nextNum);
-        nextNum.setBounds(800, 0, 200, 89);
+        nextNum.setBounds(800, 0, 230, 66);
         nextNum.setBackground(null);
         nextNum.setContentAreaFilled(false);
         nextNum.setFocusPainted(false);
         nextNum.setBorderPainted(false);
 
-        buttonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/randomButton.png")); // เพิ่มรูปปุ่ม
+        buttonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/ramdom_new.png")); // เพิ่มรูปปุ่ม
         nextNum.setIcon(buttonIcon);
 
         //creates tooltips for buttons
