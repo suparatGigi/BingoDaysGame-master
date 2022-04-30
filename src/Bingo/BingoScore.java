@@ -30,6 +30,16 @@ public class BingoScore {
         return 0;
     }
 
+    public static int scoreYouWillGet(){
+        if (ChooseStageScreen.numStage == 1 )  return 20;
+        else if (ChooseStageScreen.numStage == 2 )   return 30;
+        else if (ChooseStageScreen.numStage == 3 )   return 40;
+        else if (ChooseStageScreen.numStage == 4 )   return 50;
+        else if (ChooseStageScreen.numStage == 5 )   return 60;
+        else if (ChooseStageScreen.numStage == 6 )   return 70;
+        else if (ChooseStageScreen.numStage == 7 )   return 80;
+        else return 0;
+    }
 
 
     public BingoScore(){

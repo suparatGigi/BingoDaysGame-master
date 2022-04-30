@@ -8,6 +8,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileInputStream;
+import java.awt.Font;
 import java.io.IOException;
 
 public class ChooseStageScreen extends JPanel {
@@ -56,14 +57,13 @@ public class ChooseStageScreen extends JPanel {
         Graphics2D g2 = (Graphics2D) g;
         g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
 
-        Font font = new Font("Franxurter-w11D9", Font.PLAIN, 45);
+        Font font = new Font("Franxurter-w11D9.ttf", Font.PLAIN, 45);
         g2.setFont(font);
 
 //        try{
-//            int fontSize = 45;
-//            Font myFont = Font.createFont(Font.TRUETYPE_FONT, new FileInputStream("font/Franxurter-w119.ttf"));
-//            myFont = myFont.deriveFont(Font.PLAIN, 100);
-//            g2.setFont(myFont);
+//            Font font = Font.createFont(Font.TRUETYPE_FONT, new FileInputStream("font/Franxurter-w11D9.ttf"));
+//            font = font.deriveFont(Font.PLAIN, 100);
+//            g2.setFont(font);
 //        }
 //        catch (Exception error){
 //

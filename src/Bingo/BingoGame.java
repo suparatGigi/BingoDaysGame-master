@@ -1,7 +1,9 @@
 package Bingo;
 
 import Main.ChooseStageScreen;
+import Main.LoseScreen;
 import Main.MainDisplay;
+import Main.WinScreen;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,6 +13,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class BingoGame extends JFrame{
+    public static JFrame bingoframe;
     public static final int WIDTH = 1295;
     public static final int LENGTH = 715;
 
@@ -37,6 +40,8 @@ public class BingoGame extends JFrame{
     public static JPanel panel;
 
     public BingoGame() {
+        this.bingoframe = new JFrame();
+
         setSize(WIDTH, LENGTH); //ขนาดหน้าต่าง
         setResizable(false);
         setLocationRelativeTo(null);
@@ -198,9 +203,14 @@ public class BingoGame extends JFrame{
                         else if (ChooseStageScreen.numStage == 5 )  BingoScore.highScore += 60;
                         else if (ChooseStageScreen.numStage == 6 )  BingoScore.highScore += 70;
                         else if (ChooseStageScreen.numStage == 7 )  BingoScore.highScore += 80;
-                        //new ChooseStageScreen();
+                        getContentPane().removeAll();
+                        add(new WinScreen());
+                        validate();
                     } else {
                         clickGrid.setWinnerMessage("Sorry, you haven't gotten bingo.");
+                        getContentPane().removeAll();
+                        add(new LoseScreen());
+                        validate();
                     }
                 }
             } else if (source == nextNum) { //calls the next bingo number and checks for winner
