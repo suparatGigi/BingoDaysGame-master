@@ -29,7 +29,7 @@ public class BingoScore {
         else  //"YOU UNLOCKED ALL LEVELS"
         return 0;
     }
-    
+
     public BingoScore(){
 
 
