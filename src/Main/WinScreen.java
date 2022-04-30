@@ -11,6 +11,11 @@ import java.awt.event.ActionListener;
 public class WinScreen extends JPanel {
 
     public WinScreen() {
+
+        //add message sound
+        DisplayRunner.currentMusic = DisplayRunner.bingoMusic;
+        DisplayRunner.playMessage(DisplayRunner.currentMusic);
+
         //create continue button
         JButton continueButton = new JButton();
         continueButton.setBounds(330, 120,641,498);
