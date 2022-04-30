@@ -8,9 +8,10 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class LoseScreen extends JFrame {
+public class LoseScreen extends JPanel {
 
     public LoseScreen() {
+
         //create continue button
         JButton continueButton = new JButton();
         continueButton.setBounds(343, 134,615,470);

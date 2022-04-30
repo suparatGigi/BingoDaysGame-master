@@ -8,6 +8,11 @@ import java.awt.event.ActionListener;
 public class Message2Screen extends JPanel {
 
     public Message2Screen(){
+
+        //add message sound
+        DisplayRunner.currentMusic = DisplayRunner.Message2Music;
+        DisplayRunner.playMessage(DisplayRunner.currentMusic);
+
         //create awesome button
         JButton awesomeButton = new JButton();
         awesomeButton.setBounds(490, 450,319,90);

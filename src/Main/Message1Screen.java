@@ -8,6 +8,11 @@ import java.awt.event.ActionListener;
 public class Message1Screen extends JPanel {
 
     public Message1Screen(){
+
+        //add message sound
+        DisplayRunner.currentMusic = DisplayRunner.Message1Music;
+        DisplayRunner.playMessage(DisplayRunner.currentMusic);
+
         //create letsgo button
         JButton letsgoButton = new JButton();
         letsgoButton.setBounds(490, 450,319,90);

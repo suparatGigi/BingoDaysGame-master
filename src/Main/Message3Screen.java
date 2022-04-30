@@ -7,6 +7,11 @@ import java.awt.event.ActionListener;
 
 public class Message3Screen extends JPanel {
     public Message3Screen() {
+
+        //add message sound
+        DisplayRunner.currentMusic = DisplayRunner.Message3Music;
+        DisplayRunner.playMessage(DisplayRunner.currentMusic);
+
         //create awesome button
         JButton goodButton = new JButton();
         goodButton.setBounds(490, 450, 319, 90);

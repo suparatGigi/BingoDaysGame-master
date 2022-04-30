@@ -203,14 +203,18 @@ public class BingoGame extends JFrame{
                         else if (ChooseStageScreen.numStage == 5 )  BingoScore.highScore += 60;
                         else if (ChooseStageScreen.numStage == 6 )  BingoScore.highScore += 70;
                         else if (ChooseStageScreen.numStage == 7 )  BingoScore.highScore += 80;
-                        getContentPane().removeAll();
-                        add(new WinScreen());
-                        validate();
+                        if(winner == true) {
+                            getContentPane().removeAll();
+                            add(new WinScreen());
+                            validate();
+                        }
                     } else {
                         clickGrid.setWinnerMessage("Sorry, you haven't gotten bingo.");
-                        getContentPane().removeAll();
-                        add(new LoseScreen());
-                        validate();
+                        if(winner == false) {
+                            getContentPane().removeAll();
+                            add(new LoseScreen());
+                            validate();
+                        }
                     }
                 }
             } else if (source == nextNum) { //calls the next bingo number and checks for winner
