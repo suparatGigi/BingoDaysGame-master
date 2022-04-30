@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6f44a18-cc1c-4640-a0a1-37c6ec2f4a94" name="Changes" comment="" />
+    <list default="true" id="c6f44a18-cc1c-4640-a0a1-37c6ec2f4a94" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Main/LoseScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bingo/BingoScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/WinDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/WinScreen.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +36,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/gigi/Desktop/BingoDaysGame-master/src/sound",
+    "last_opened_file_path": "/Users/matcy/Desktop/fresher/Prog Tech Lab/BingoDaysGame-beta",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -47,7 +51,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="DisplayRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main.DisplayRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.DisplayRunner" />
       <module name="BingoDaysGame" />
       <extension name="coverage">
@@ -62,7 +66,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DisplayRunner" />
+        <item itemvalue="Application.Main.DisplayRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -84,6 +88,7 @@
       <workItem from="1651220849968" duration="13882000" />
       <workItem from="1651235004732" duration="35000" />
       <workItem from="1651239339687" duration="11842000" />
+      <workItem from="1651284641481" duration="215000" />
     </task>
     <servers />
   </component>

@@ -2,6 +2,6 @@ package Main;
 
 import javax.swing.*;
 
-public class WinDisplay extends JPanel {
+public class WinScreen extends JPanel {
 
 }
