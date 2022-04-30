@@ -7,6 +7,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.FileInputStream;
+import java.io.IOException;
 
 public class ChooseStageScreen extends JPanel {
     public static JPanel chooseStageScreen;
@@ -54,9 +56,18 @@ public class ChooseStageScreen extends JPanel {
         Graphics2D g2 = (Graphics2D) g;
         g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
 
-        int fontSize = 45;
-        Font font = new Font("SansSerif", Font.PLAIN, fontSize);
+        Font font = new Font("Franxurter-w11D9", Font.PLAIN, 45);
         g2.setFont(font);
+
+//        try{
+//            int fontSize = 45;
+//            Font myFont = Font.createFont(Font.TRUETYPE_FONT, new FileInputStream("font/Franxurter-w119.ttf"));
+//            myFont = myFont.deriveFont(Font.PLAIN, 100);
+//            g2.setFont(myFont);
+//        }
+//        catch (Exception error){
+//
+//        }
 
         //prints message high score:
         String highScoreMessage = " "+ BingoScore.getHighScore();
