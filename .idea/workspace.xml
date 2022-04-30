@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c6f44a18-cc1c-4640-a0a1-37c6ec2f4a94" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/DisplayRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/DisplayRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/ChooseStageScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ChooseStageScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/LoseScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/LoseScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/WinScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/WinScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
