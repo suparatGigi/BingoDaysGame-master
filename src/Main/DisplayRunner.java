@@ -16,17 +16,19 @@ public class DisplayRunner {
 
         new DisplayRunner();
     }
+
     public DisplayRunner(){
         currentMusic = fieldMusic;
         playMusic(currentMusic);
     }
-
+    //play game music
     public void playMusic(URL url) {
         music.setFile(url);
         music.play(url);
         music.loop(url);
     }
 
+    //stop game music
     public void stopMusic(URL url) {
         music.stop(url);
     }

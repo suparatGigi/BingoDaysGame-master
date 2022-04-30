@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6f44a18-cc1c-4640-a0a1-37c6ec2f4a94" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Main/LoseScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Message1Screen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Message2Screen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Message3Screen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bingo/BingoScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/WinDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/WinScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/ChooseStageScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ChooseStageScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/DisplayRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/DisplayRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/InputNameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/InputNameScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/MainDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MainDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/StartScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/StartScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/closebutton.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/image/closebutton.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +96,7 @@
       <workItem from="1651220849968" duration="13882000" />
       <workItem from="1651235004732" duration="35000" />
       <workItem from="1651239339687" duration="11842000" />
-      <workItem from="1651284641481" duration="215000" />
+      <workItem from="1651284641481" duration="9390000" />
     </task>
     <servers />
   </component>

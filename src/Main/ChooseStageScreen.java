@@ -16,9 +16,9 @@ public class ChooseStageScreen extends JPanel {
     public void paint(Graphics g){
         repaint();
         Toolkit t = Toolkit.getDefaultToolkit(); //สร้าง Toolkit ไว้ import image
-        Image bg = t.getImage("src/image/Bg3.png");
-        Image xbutton = t.getImage("src/image/Xbutton.png");
-        Image rebutton = t.getImage("src/image/rebutton.png");
+        Image bg = t.getImage("src/image/ChooseScreen copy.png");
+        Image xbutton = t.getImage("src/image/closebutton.png");
+        Image rebutton = t.getImage("src/image/returnbutton.png");
         Image mon = t.getImage("src/image/mon.png");
         Image tue = t.getImage("src/image/tue.png");
         Image wed = t.getImage("src/image/wed.png");
@@ -28,9 +28,9 @@ public class ChooseStageScreen extends JPanel {
         Image sun = t.getImage("src/image/sun.png");
 
 
-        g.drawImage(bg,0,0,this);
-        g.drawImage(xbutton,1180, 4, 90, 88,this);
-        g.drawImage(rebutton,1090, 3, 90, 88,this);
+        g.drawImage(bg,0,0,1295,715,this);
+        g.drawImage(xbutton,970, 600, 325, 99,this);
+        g.drawImage(rebutton,0, 600, 325, 99,this);
         g.drawImage(tue,400, 130, 200, 248,this);
         g.drawImage(mon,150, 130, 200, 248,this);
         g.drawImage(tue,400, 130, 200, 248,this);
@@ -60,11 +60,11 @@ public class ChooseStageScreen extends JPanel {
 
         //prints message high score:
         String highScoreMessage = " "+ BingoScore.getHighScore();
-        g2.drawString(highScoreMessage, 920,60);
+        g2.drawString(highScoreMessage, 1148,65);
 
         //prints message NEXT UNLOCKED
         String nextUnlockMessage = " " + BingoScore.getNextUnlocked();
-        g2.drawString(nextUnlockMessage, 450,60);
+        g2.drawString(nextUnlockMessage, 460,65);
 
     }
 
@@ -92,35 +92,35 @@ public class ChooseStageScreen extends JPanel {
 
         //crate return button
         JButton returnButton = new JButton();
-        returnButton.setBounds(1090, 3, 90, 88);
+        returnButton.setBounds(0, 600, 325, 99);
         returnButton.setBackground(null);
         returnButton.setContentAreaFilled(false);
         returnButton.setFocusPainted(false);
         returnButton.setBorderPainted(false);
         returnButton.setToolTipText("RETURN");
 
-        ImageIcon returnButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/rebutton.png")); // เพิ่มรูปปุ่ม
+        ImageIcon returnButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/returnbutton.png")); // เพิ่มรูปปุ่ม
         returnButton.setIcon(returnButtonIcon);
 
         returnButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 MainDisplay.window.getContentPane().removeAll();
-                //MainDisplay.window.add(new MondayStage());
+                MainDisplay.window.add(new Message3Screen());
                 MainDisplay.window.validate();
             }
         });
 
         //crate close button
         JButton closeButton = new JButton();
-        closeButton.setBounds(1180, 4, 90, 88);
+        closeButton.setBounds(970, 600, 325, 99);
         closeButton.setBackground(null);
         closeButton.setContentAreaFilled(false);
         closeButton.setFocusPainted(false);
         closeButton.setBorderPainted(false);
         closeButton.setToolTipText("CLOSE");
 
-        ImageIcon closeButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/Xbutton.png")); // เพิ่มรูปปุ่ม
+        ImageIcon closeButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/closebutton.png")); // เพิ่มรูปปุ่ม
         closeButton.setIcon(closeButtonIcon);
 
         closeButton.addActionListener(new ActionListener() {
