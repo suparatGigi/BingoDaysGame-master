@@ -11,7 +11,7 @@ public class BingoNumbers extends JComponent {
     public BingoNumbers() {}
 
     /**
-     * Checks if <code>value</code> already exists in the ArrayList
+     * Checks if value already exists in the ArrayList
      */
     public boolean isFound(int value)
     {
@@ -23,14 +23,14 @@ public class BingoNumbers extends JComponent {
     }
 
     /**
-     * Creates a unique number from 1-75 and puts it into the ArrayList
+     * Creates a unique number from 1-60 and puts it into the ArrayList
      */
     public void generateNumber() {
         boolean exit = false;
         Random generator = new Random();
 
-        while (!exit && numbers.size() != 75) {
-            int newNumber = generator.nextInt(75) + 1;  //1 - 75
+        while (!exit && numbers.size() != 60) {
+            int newNumber = generator.nextInt(60) + 1;  //1 - 60
             if (!isFound(newNumber)) {
                 numbers.add(newNumber);
                 exit = true;
@@ -52,9 +52,9 @@ public class BingoNumbers extends JComponent {
         Font font = new Font("SansSerif", Font.PLAIN, fontSize);
         g2.setFont(font);
 
-//        String call = "Calling: ";
-//        g2.drawString(call, 70, 225);
 
+
+        //Calling number
         if (!numbers.isEmpty()) {
             int number = numbers.get(numbers.size() - 1);
             int xCoord = 165;

@@ -3,6 +3,7 @@ package Main;
 
 import java.net.URL;
 
+import Bingo.BingoSquare;
 import sound.MessageSound;
 import sound.Music;
 import static Main.MainDisplay.window;
@@ -22,7 +23,6 @@ public class DisplayRunner {
         new MainDisplay();
         window.setVisible(true);
 
-        //new DisplayRunner();
     }
 
     public DisplayRunner(){

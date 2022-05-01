@@ -7,8 +7,8 @@ import java.util.Random;
 public class BingoClick extends BingoGrid{
 
     static Random random = new Random();
-    public final int rowRandom = random.nextInt(0,3);
-    public final int colRandom = random.nextInt(0,3);
+    public final int rowRandom = random.nextInt(3)+1;
+    public final int colRandom = random.nextInt(3)+1;
 
     public BingoClick() {
         super();
@@ -24,7 +24,6 @@ public class BingoClick extends BingoGrid{
         //middle spot is freebie
         grid[rowRandom][colRandom].setStatus(true);
         grid[rowRandom][colRandom].setIsClicked(true);
-        winnerMessage = "";
     }
 
     /**
@@ -104,12 +103,12 @@ public class BingoClick extends BingoGrid{
 
                 //freebie
                 if (row == rowRandom && col == colRandom) {
-                } else {
+                }else {
                     int value = grid[row][col].getValue();
                     int xCoord = (int) square.getX() + (SQUARE_SIZE / 4);
                     int yCoord = (int) square.getY() + (SQUARE_SIZE / 2) + (SQUARE_SIZE / 8);
                     if (value < 10)
-                        g2.drawString(" " + value + "", xCoord, yCoord);
+                        g2.drawString("" + value + "", xCoord, yCoord);
                     else
                         g2.drawString(value + "", xCoord, yCoord);
                 }
@@ -124,9 +123,6 @@ public class BingoClick extends BingoGrid{
         String nextUnlockMessage = " " + BingoScore.scoreYouWillGet();
         g2.drawString(nextUnlockMessage, 1018,360);
 
-        //prints message if grid has won
-        g2.setColor(Color.RED);
-        g2.drawString(winnerMessage, 70, 300);
 
     }
 }

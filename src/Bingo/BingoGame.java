@@ -123,7 +123,7 @@ public class BingoGame extends JFrame{
         stop.addActionListener(buttonListener);
 
         layout = this.getContentPane();
-        layout.add(panel, "South");
+        layout.add(panel, "South"); //set position of button
         setVisible(true);
 
         mouseListener = new MouseClickListener();
@@ -151,7 +151,6 @@ public class BingoGame extends JFrame{
             if (startGame && !winner) {
                 bingoNumbers.generateNumber();
                 clickGrid.isCalled();
-                clickGrid.setWinnerMessage("");
                 bingoNumbers.repaint();
             }
         }
@@ -186,7 +185,6 @@ public class BingoGame extends JFrame{
             } else if (source == bingo) { //checks if the human grid has won
                 if (!winner) {
                     if (clickGrid.checkWin()) {
-                        clickGrid.setWinnerMessage("BINGO");
                         winner = true;
                         if (ChooseStageScreen.numStage == 1 )   BingoScore.highScore += 20;
                         else if (ChooseStageScreen.numStage == 2 )  BingoScore.highScore += 30;
@@ -200,19 +198,22 @@ public class BingoGame extends JFrame{
                             add(new WinScreen());
                             validate();
                         }
+
                     } else {
-                        clickGrid.setWinnerMessage("Sorry, you haven't gotten bingo.");
                         if(winner == false) {
                             getContentPane().removeAll();
                             add(new LoseScreen());
                             validate();
                         }
                     }
+                    clickGrid.initializeGrid();
+                    clickGrid.hightlightfree();
+                    bingoNumbers.numbers.clear();
+                    winner = false;
                 }
             } else if (source == nextNum) { //calls the next bingo number and checks for winner
                 if (!winner) {
                     bingoNumbers.generateNumber();
-                    clickGrid.setWinnerMessage("");
                     clickGrid.isCalled();
 
                 }

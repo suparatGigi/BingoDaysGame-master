@@ -10,17 +10,13 @@ public class BingoGrid extends JComponent {
     protected final int SQUARE_SIZE = 80;
     protected final int LENGTH = 4;
     protected final int WIDTH = 4;
-    //public static final String[] BINGO = {"D", "A", "Y", "S"};
-    public int indentX;
+    public int indentX; //set position of grid
     public int indentY;
-    protected String winnerMessage;
 
 
     public BingoGrid() {
-        grid = new BingoSquare[WIDTH][LENGTH];
+        grid = new BingoSquare[WIDTH][LENGTH]; //create bingo square 4x4 = 16 rectangle
         bingoGridNumbers = new ArrayList<>();
-        winnerMessage = "";
-
     }
 
     /**
@@ -92,7 +88,7 @@ public class BingoGrid extends JComponent {
             this.removeIsWinnerMark();
         }
 
-        //check diagonal from top-left to bottom-right
+        //check diagonal from top-left to bottom-right ex.(0,0),(1,1),(2,2),(3,3)
         count = 0;
         for (int index = 0; index < grid.length; index++) {
             BingoSquare square = grid[index][index];
@@ -106,7 +102,7 @@ public class BingoGrid extends JComponent {
         }
         this.removeIsWinnerMark();
 
-        //check diagonal from bottom-right to top-left
+        //check diagonal from bottom-left to top-right ex.(3,0),(2,2),(1,3),(0,3)
         count = 0;
         for (int index = grid.length - 1; index >= 0; index--) {
             BingoSquare square = grid[index][(grid.length - 1) - index];
@@ -176,9 +172,6 @@ public class BingoGrid extends JComponent {
         }
     }
 
-    public void setWinnerMessage(String newMsg) {
-        winnerMessage = newMsg;
-    }
 }
 
 
