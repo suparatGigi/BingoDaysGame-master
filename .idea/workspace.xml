@@ -3,10 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="c6f44a18-cc1c-4640-a0a1-37c6ec2f4a94" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bingo/BingoClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoClick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bingo/BingoGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bingo/BingoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stage/MondayStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage/MondayStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/ChooseStageScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ChooseStageScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/HowToPlayScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/HowToPlayScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage/FridayStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage/FridayStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage/SaturdayStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage/SaturdayStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage/SundayStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage/SundayStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage/ThursdayStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage/ThursdayStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage/TuesdayStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage/TuesdayStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage/WednesdayStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage/WednesdayStage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +100,8 @@
       <workItem from="1651323448910" duration="10208000" />
       <workItem from="1651329849411" duration="3435000" />
       <workItem from="1651389882490" duration="865000" />
-      <workItem from="1651393273158" duration="1826000" />
+      <workItem from="1651393273158" duration="1859000" />
+      <workItem from="1651396617666" duration="1573000" />
     </task>
     <servers />
   </component>

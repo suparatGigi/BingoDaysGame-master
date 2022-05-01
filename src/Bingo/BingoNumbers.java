@@ -62,7 +62,7 @@ public class BingoNumbers extends JComponent {
         if (!numbers.isEmpty()) {
             int number = numbers.get(numbers.size() - 1);
             int xCoord = 165;
-            int yCoord = 470;
+            int yCoord = 468;
             g2.setFont(new Font("SansSerif", Font.BOLD, bigFont));
             if (number <= 15) {
                 g2.drawString("D-" + number, xCoord, yCoord);

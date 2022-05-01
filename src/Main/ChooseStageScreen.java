@@ -1,5 +1,6 @@
 package Main;
 
+import Bingo.BingoNumbers;
 import Bingo.BingoScore;
 import Stage.MondayStage;
 
