@@ -1,6 +1,7 @@
 package Stage;
 
 import Bingo.BingoGame;
+import Main.MainDisplay;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,12 +13,12 @@ public class SaturdayStage extends BingoGame {
     public SaturdayStage() {
         super();
 
-        saturdayBackground = new JLabel();
+        JLabel saturdayBackground = new JLabel();
         saturdayBackground.setBounds(0, 0, 1310, 715);
 
         ImageIcon bgIcon = new ImageIcon(getClass().getClassLoader().getResource("image/bgSat.png")); // เพิ่มBackground
         saturdayBackground.setIcon(bgIcon);
-        add(saturdayBackground);
+        MainDisplay.window.add(saturdayBackground);
 
     }
 }

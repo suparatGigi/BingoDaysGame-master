@@ -1,9 +1,7 @@
 package Bingo;
 
-import Main.ChooseStageScreen;
-import Main.LoseScreen;
-import Main.MainDisplay;
-import Main.WinScreen;
+import Main.*;
+import Stage.MondayStage;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,41 +10,30 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-public class BingoGame extends JFrame{
-    public static JFrame bingoframe;
+public class BingoGame extends JPanel {
+
     public static final int WIDTH = 1295;
     public static final int LENGTH = 715;
 
-    private JButton reset;
-    private JButton bingo;
-    private JButton nextNum;
-    private JButton start;
-    private JButton stop;
-    private Container layout;
-    private Container boxLayout;
+    public static JButton reset;
+    public static JButton bingo;
+    public static JButton nextNum;
+    public static JButton start;
+    public static JButton stop;
+    public Container layout;
+    public Container boxLayout;
 
-    private BingoNumbers bingoNumbers;
-    private BingoGrid dummyGrid;
-    private BingoClick clickGrid;
-
-
-    private MouseListener mouseListener;
-    private ActionListener timer;
     private ActionListener buttonListener;
-    private final int DELAY;
-    private boolean startGame = false;
+    public static BingoNumbers bingoNumbers;
+    public static BingoClick clickGrid;
+
+
+    public static boolean startGame = false;
     public static boolean winner = false;
 
     public static JPanel panel;
 
     public BingoGame() {
-        this.bingoframe = new JFrame();
-
-        setSize(WIDTH, LENGTH); //ขนาดหน้าต่าง
-        setResizable(false);
-        setLocationRelativeTo(null);
-        setTitle("Bingo Days Game"); //ชื่อบนหัวหน้าต่าง
-
 
         //create panel for container button
         panel = new JPanel();
@@ -132,55 +119,7 @@ public class BingoGame extends JFrame{
         start.addActionListener(buttonListener);
         stop.addActionListener(buttonListener);
 
-        layout = this.getContentPane();
-        layout.add(panel, "South");
-        setVisible(true);
-
-        mouseListener = new MouseClickListener();
-        timer = new MyTimer();
-        DELAY = 3000;
-        Timer t = new Timer(DELAY, timer);
-        t.start();
-
-        clickGrid = new BingoClick();
-
-        bingoNumbers = new BingoNumbers();
-
-        add(clickGrid);
-        setVisible(true);
-        clickGrid.addMouseListener(mouseListener);
-
-        add(bingoNumbers);
-        setVisible(true);
-
-    }
-    //the timer
-    class MyTimer implements ActionListener {
-        public void actionPerformed(ActionEvent event) {
-            if (startGame && !winner) {
-                bingoNumbers.generateNumber();
-                clickGrid.isCalled();
-                clickGrid.setWinnerMessage("");
-                bingoNumbers.repaint();
-            }
-        }
-    }
-
-    //The Mouse listener
-    class MouseClickListener implements MouseListener {
-        public void mousePressed(MouseEvent event) {
-            int x = event.getX();
-            int y = event.getY();
-            clickGrid.highlightSquare(x, y);
-        }
-
-        public void mouseReleased(MouseEvent event) {}
-
-        public void mouseClicked (MouseEvent event) {}
-
-        public void mouseEntered(MouseEvent event) {}
-
-        public void mouseExited(MouseEvent event) {}
+        MainDisplay.window.add(panel, "South");
     }
 
     //the button listener
@@ -196,24 +135,24 @@ public class BingoGame extends JFrame{
                     if (clickGrid.checkWin()) {
                         clickGrid.setWinnerMessage("BINGO");
                         winner = true;
-                        if (ChooseStageScreen.numStage == 1 )   BingoScore.highScore += 20;
-                        else if (ChooseStageScreen.numStage == 2 )  BingoScore.highScore += 30;
-                        else if (ChooseStageScreen.numStage == 3 )  BingoScore.highScore += 40;
-                        else if (ChooseStageScreen.numStage == 4 )  BingoScore.highScore += 50;
-                        else if (ChooseStageScreen.numStage == 5 )  BingoScore.highScore += 60;
-                        else if (ChooseStageScreen.numStage == 6 )  BingoScore.highScore += 70;
-                        else if (ChooseStageScreen.numStage == 7 )  BingoScore.highScore += 80;
-                        if(winner == true) {
-                            getContentPane().removeAll();
-                            add(new WinScreen());
-                            validate();
+                        if (ChooseStageScreen.numStage == 1) BingoScore.highScore += 20;
+                        else if (ChooseStageScreen.numStage == 2) BingoScore.highScore += 30;
+                        else if (ChooseStageScreen.numStage == 3) BingoScore.highScore += 40;
+                        else if (ChooseStageScreen.numStage == 4) BingoScore.highScore += 50;
+                        else if (ChooseStageScreen.numStage == 5) BingoScore.highScore += 60;
+                        else if (ChooseStageScreen.numStage == 6) BingoScore.highScore += 70;
+                        else if (ChooseStageScreen.numStage == 7) BingoScore.highScore += 80;
+                        if (winner == true) {
+                            MainDisplay.window.getContentPane().removeAll();
+                            MainDisplay.window.add(new WinScreen());
+                            MainDisplay.window.validate();
                         }
                     } else {
                         clickGrid.setWinnerMessage("Sorry, you haven't gotten bingo.");
-                        if(winner == false) {
-                            getContentPane().removeAll();
-                            add(new LoseScreen());
-                            validate();
+                        if (winner == false) {
+                            MainDisplay.window.getContentPane().removeAll();
+                            MainDisplay.window.add(new LoseScreen());
+                            MainDisplay.window.validate();
                         }
                     }
                 }
@@ -231,8 +170,9 @@ public class BingoGame extends JFrame{
             }
             clickGrid.repaint();
             bingoNumbers.repaint();
-            layout.repaint();
+//        layout.repaint();
         }
+
     }
 }
 

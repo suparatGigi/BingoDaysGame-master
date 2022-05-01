@@ -1,5 +1,8 @@
 package Main;
 
+import Bingo.BingoClick;
+import Bingo.BingoGame;
+import Bingo.BingoNumbers;
 import Bingo.BingoScore;
 import Stage.MondayStage;
 
@@ -7,14 +10,20 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.io.FileInputStream;
 import java.awt.Font;
 import java.io.IOException;
 
+import static Bingo.BingoGame.*;
+
 public class ChooseStageScreen extends JPanel {
-    public static JPanel chooseStageScreen;
-    private JLabel chooseStageBackground;
     public static int numStage = 0;
+
+    private MouseListener mouseListener;
+    private ActionListener timer;
+
 
     public void paint(Graphics g){
         repaint();
@@ -166,8 +175,27 @@ public class ChooseStageScreen extends JPanel {
             @Override
                 public void actionPerformed(ActionEvent e) {
                     numStage = 1;
-                    //MainDisplay.window.getContentPane().removeAll();
+                    MainDisplay.window.getContentPane().removeAll();
                     MainDisplay.window.add(new MondayStage());
+
+                    timer = new MyTimer();
+                    int DELAY = 3000;
+                    Timer t = new Timer(DELAY, timer);
+                    t.start();
+
+                    clickGrid = new BingoClick();
+
+                    bingoNumbers = new BingoNumbers();
+
+                    mouseListener = new MouseClickListener();
+                    clickGrid.addMouseListener(mouseListener);
+
+                    MainDisplay.window.add(clickGrid);
+                    clickGrid.setVisible(true);
+
+                    MainDisplay.window.add(bingoNumbers);
+                    bingoNumbers.setVisible(true);
+
                     MainDisplay.window.validate();
                 }
             });
@@ -202,9 +230,10 @@ public class ChooseStageScreen extends JPanel {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         numStage = 2;
-                        //MainDisplay.window.getContentPane().removeAll();
+                        MainDisplay.window.getContentPane().removeAll();
                         MainDisplay.window.add(new Stage.TuesdayStage());
                         MainDisplay.window.validate();
+                        MainDisplay.window.add(new BingoClick());
                     }
                 });
             }
@@ -237,7 +266,7 @@ public class ChooseStageScreen extends JPanel {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     numStage = 3;
-                    //MainDisplay.window.getContentPane().removeAll();
+                    MainDisplay.window.getContentPane().removeAll();
                     MainDisplay.window.add(new Stage.WednesdayStage());
                     MainDisplay.window.validate();
                 }
@@ -272,7 +301,7 @@ public class ChooseStageScreen extends JPanel {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     numStage = 4;
-                    //MainDisplay.window.getContentPane().removeAll();
+                    MainDisplay.window.getContentPane().removeAll();
                     MainDisplay.window.add(new Stage.ThursdayStage());
                     MainDisplay.window.validate();
                 }
@@ -307,7 +336,7 @@ public class ChooseStageScreen extends JPanel {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     numStage = 5;
-                    //MainDisplay.window.getContentPane().removeAll();
+                    MainDisplay.window.getContentPane().removeAll();
                     MainDisplay.window.add(new Stage.FridayStage());
                     MainDisplay.window.validate();
                 }
@@ -342,7 +371,7 @@ public class ChooseStageScreen extends JPanel {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     numStage = 6;
-                    //MainDisplay.window.getContentPane().removeAll();
+                    MainDisplay.window.getContentPane().removeAll();
                     MainDisplay.window.add(new Stage.SaturdayStage());
                     MainDisplay.window.validate();
                 }
@@ -378,7 +407,7 @@ public class ChooseStageScreen extends JPanel {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     numStage = 7;
-                    //MainDisplay.window.getContentPane().removeAll();
+                    MainDisplay.window.getContentPane().removeAll();
                     MainDisplay.window.add(new Stage.SundayStage());
                     MainDisplay.window.validate();
                 }
@@ -387,6 +416,38 @@ public class ChooseStageScreen extends JPanel {
         MainDisplay.window.add(sundayButton);
 
     }
+
+    //the timer
+    class MyTimer implements ActionListener {
+        public void actionPerformed(ActionEvent event) {
+            if (BingoGame.startGame && !winner) {
+                bingoNumbers.generateNumber();
+                clickGrid.isCalled();
+                clickGrid.setWinnerMessage("");
+                bingoNumbers.repaint();
+            }
+        }
+    }
+
+    //The Mouse listener
+    class MouseClickListener implements MouseListener {
+        public void mousePressed(MouseEvent event) {
+            int x = event.getX();
+            int y = event.getY();
+            clickGrid.highlightSquare(x, y);
+        }
+
+        public void mouseReleased(MouseEvent event) {}
+
+        public void mouseClicked (MouseEvent event) {}
+
+        public void mouseEntered(MouseEvent event) {}
+
+        public void mouseExited(MouseEvent event) {}
+    }
+
+
+
 
 }
 

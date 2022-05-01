@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6f44a18-cc1c-4640-a0a1-37c6ec2f4a94" name="Changes" comment="">
+    <list default="true" id="992a13c8-917a-4e39-839d-a555f7958069" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Bingo/BingoTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-
-=======
-      <change beforePath="$PROJECT_DIR$/src/Bingo/BingoClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoClick.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bingo/BingoGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bingo/BingoGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoGrid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bingo/BingoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bingo/BingoScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bingo/BingoSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/ChooseStageScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ChooseStageScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/MainDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MainDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stage/MondayStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage/MondayStage.java" afterDir="false" />
->>>>>>> afb89b8baf663bb5c65359d393fb533d499274e6
+      <change beforePath="$PROJECT_DIR$/src/Stage/SaturdayStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage/SaturdayStage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +26,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.idea/workspace.xml" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -97,11 +99,8 @@
       <workItem from="1651239339687" duration="11842000" />
       <workItem from="1651284641481" duration="10973000" />
       <workItem from="1651309084681" duration="5820000" />
-
       <workItem from="1651323448910" duration="10208000" />
-=======
       <workItem from="1651329849411" duration="3435000" />
->>>>>>> afb89b8baf663bb5c65359d393fb533d499274e6
     </task>
     <servers />
   </component>

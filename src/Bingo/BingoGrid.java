@@ -1,10 +1,12 @@
 package Bingo;
 
+import Main.MainDisplay;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
-public class BingoGrid extends JComponent {
+public class BingoGrid extends JPanel {
     protected BingoSquare[][] grid;
     protected ArrayList<Integer> bingoGridNumbers;
     protected final int SQUARE_SIZE = 80;
@@ -20,6 +22,7 @@ public class BingoGrid extends JComponent {
         grid = new BingoSquare[WIDTH][LENGTH];
         bingoGridNumbers = new ArrayList<Integer>();
         winnerMessage = "null";
+
     }
 
     /**

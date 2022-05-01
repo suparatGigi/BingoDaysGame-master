@@ -1,5 +1,7 @@
 package Main;
 
+import Bingo.BingoTable;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -19,5 +21,6 @@ public class MainDisplay {
 
         //begin with start screen
         window.add(new StartScreen());
+
     }
 }
