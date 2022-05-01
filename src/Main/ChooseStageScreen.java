@@ -1,5 +1,6 @@
 package Main;
 
+import Bingo.BingoGame;
 import Bingo.BingoScore;
 import Stage.MondayStage;
 
@@ -166,8 +167,8 @@ public class ChooseStageScreen extends JPanel {
             @Override
                 public void actionPerformed(ActionEvent e) {
                     numStage = 1;
-                    //MainDisplay.window.getContentPane().removeAll();
-                    MainDisplay.window.add(new MondayStage());
+                    MainDisplay.window.getContentPane().removeAll();
+                    MainDisplay.window.add(new BingoGame());
                     MainDisplay.window.validate();
                 }
             });
@@ -202,7 +203,7 @@ public class ChooseStageScreen extends JPanel {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         numStage = 2;
-                        //MainDisplay.window.getContentPane().removeAll();
+                        MainDisplay.window.getContentPane().removeAll();
                         MainDisplay.window.add(new Stage.TuesdayStage());
                         MainDisplay.window.validate();
                     }
@@ -237,7 +238,7 @@ public class ChooseStageScreen extends JPanel {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     numStage = 3;
-                    //MainDisplay.window.getContentPane().removeAll();
+                    MainDisplay.window.getContentPane().removeAll();
                     MainDisplay.window.add(new Stage.WednesdayStage());
                     MainDisplay.window.validate();
                 }
@@ -272,7 +273,7 @@ public class ChooseStageScreen extends JPanel {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     numStage = 4;
-                    //MainDisplay.window.getContentPane().removeAll();
+                    MainDisplay.window.getContentPane().removeAll();
                     MainDisplay.window.add(new Stage.ThursdayStage());
                     MainDisplay.window.validate();
                 }
@@ -307,7 +308,7 @@ public class ChooseStageScreen extends JPanel {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     numStage = 5;
-                    //MainDisplay.window.getContentPane().removeAll();
+                    MainDisplay.window.getContentPane().removeAll();
                     MainDisplay.window.add(new Stage.FridayStage());
                     MainDisplay.window.validate();
                 }
@@ -342,7 +343,7 @@ public class ChooseStageScreen extends JPanel {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     numStage = 6;
-                    //MainDisplay.window.getContentPane().removeAll();
+                    MainDisplay.window.getContentPane().removeAll();
                     MainDisplay.window.add(new Stage.SaturdayStage());
                     MainDisplay.window.validate();
                 }
@@ -378,7 +379,7 @@ public class ChooseStageScreen extends JPanel {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     numStage = 7;
-                    //MainDisplay.window.getContentPane().removeAll();
+                    MainDisplay.window.getContentPane().removeAll();
                     MainDisplay.window.add(new Stage.SundayStage());
                     MainDisplay.window.validate();
                 }

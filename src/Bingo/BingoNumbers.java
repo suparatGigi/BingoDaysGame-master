@@ -5,7 +5,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class BingoNumbers extends JComponent {
+public class BingoNumbers extends JPanel {
     public static ArrayList<Integer> numbers = new ArrayList<Integer>();
 
     public BingoNumbers() {}
@@ -41,7 +41,7 @@ public class BingoNumbers extends JComponent {
     /**
      * Displays the numbers
      */
-    public void paintComponent(Graphics g) {
+    public void paint(Graphics g) {
         Graphics2D g2 = (Graphics2D) g;
 
         //font anti-aliasing

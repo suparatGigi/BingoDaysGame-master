@@ -1,5 +1,9 @@
 package Main;
 
+import Bingo.BingoClick;
+import Bingo.BingoGame;
+import Bingo.BingoNumbers;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -18,6 +22,16 @@ public class MainDisplay {
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //กดปิดwindow
 
         //begin with start screen
-        window.add(new StartScreen());
+       // window.add(new StartScreen());
+        JLabel mondayBackground = new JLabel();
+        mondayBackground.setBounds(0, 0, 1295, 715);
+
+        ImageIcon bgIcon = new ImageIcon(getClass().getClassLoader().getResource("image/bgmon copy.jpg")); // เพิ่มBackground
+        mondayBackground.setIcon(bgIcon);
+
+       window.add(new BingoGame());
+
+
+
     }
 }

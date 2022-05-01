@@ -2,9 +2,11 @@ package Bingo;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 
 public class BingoClick extends BingoGrid{
 
+    public static ArrayList<Integer> numbers = new ArrayList<Integer>();
     public BingoClick() {
         super();
 
@@ -56,6 +58,11 @@ public class BingoClick extends BingoGrid{
      * @param g the graphics component
      */
     public void paintComponent(Graphics g) {
+
+        Toolkit t = Toolkit.getDefaultToolkit(); //สร้าง Toolkit ไว้ import image
+        Image i = t.getImage("src/image/StartScreen.png");
+        g.drawImage(i,0,0,1295,715,this);
+
         Graphics2D g2 = (Graphics2D) g;
 
         //font anti-aliasing
@@ -111,6 +118,28 @@ public class BingoClick extends BingoGrid{
         g2.setColor(Color.RED);
         g2.drawString(winnerMessage, 70, 300);
 
+        g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+
+
+        int bigFont = 80;
+
+        String call = "Calling: ";
+        g2.drawString(call, 70, 225);
+        if (!numbers.isEmpty()) {
+            int number = numbers.get(numbers.size() - 1);
+            int xCoord = 240;
+            int yCoord = 230;
+            g2.setFont(new Font("SansSerif", Font.BOLD, bigFont));
+            if (number <= 15) {
+                g2.drawString("D-" + number, xCoord, yCoord);
+            } else if (number <= 30) {
+                g2.drawString("A-" + number, xCoord, yCoord);
+            } else if (number <= 45) {
+                g2.drawString("Y-" + number, xCoord, yCoord);
+            } else if (number <= 60) {
+                g2.drawString("S-" + number, xCoord, yCoord);
+            }
+        }
 
 
     }

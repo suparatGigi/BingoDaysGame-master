@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
-public class BingoGrid extends JComponent {
+public class BingoGrid extends JPanel {
     protected BingoSquare[][] grid;
     protected ArrayList<Integer> bingoGridNumbers;
     protected final int SQUARE_SIZE = 80;
