@@ -13,7 +13,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class BingoGame extends JFrame{
-    public static JFrame bingoframe;
+
     public static final int WIDTH = 1295;
     public static final int LENGTH = 715;
 
@@ -26,9 +26,7 @@ public class BingoGame extends JFrame{
     private Container boxLayout;
 
     private BingoNumbers bingoNumbers;
-    private BingoGrid dummyGrid;
     private BingoClick clickGrid;
-
 
     private MouseListener mouseListener;
     private ActionListener timer;
@@ -40,13 +38,10 @@ public class BingoGame extends JFrame{
     public static JPanel panel;
 
     public BingoGame() {
-        this.bingoframe = new JFrame();
-
-        setSize(WIDTH, LENGTH); //ขนาดหน้าต่าง
+        setSize(1295, 715); //ขนาดหน้าต่าง
         setResizable(false);
         setLocationRelativeTo(null);
         setTitle("Bingo Days Game"); //ชื่อบนหัวหน้าต่าง
-
 
         //create panel for container button
         panel = new JPanel();
@@ -154,6 +149,7 @@ public class BingoGame extends JFrame{
         setVisible(true);
 
     }
+
     //the timer
     class MyTimer implements ActionListener {
         public void actionPerformed(ActionEvent event) {

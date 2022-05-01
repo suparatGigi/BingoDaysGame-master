@@ -166,7 +166,6 @@ public class ChooseStageScreen extends JPanel {
             @Override
                 public void actionPerformed(ActionEvent e) {
                     numStage = 1;
-                    //MainDisplay.window.getContentPane().removeAll();
                     MainDisplay.window.add(new MondayStage());
                     MainDisplay.window.validate();
                 }

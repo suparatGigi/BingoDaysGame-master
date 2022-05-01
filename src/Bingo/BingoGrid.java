@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
+
 public class BingoGrid extends JComponent {
     protected BingoSquare[][] grid;
     protected ArrayList<Integer> bingoGridNumbers;
@@ -19,7 +20,8 @@ public class BingoGrid extends JComponent {
     public BingoGrid() {
         grid = new BingoSquare[WIDTH][LENGTH];
         bingoGridNumbers = new ArrayList<Integer>();
-        winnerMessage = "null";
+        winnerMessage = "";
+
     }
 
     /**
@@ -51,11 +53,6 @@ public class BingoGrid extends JComponent {
                     value = grid[row][col].createNum(col + 1);
             }
         }
-
-        //middle spot is freebie
-        grid[WIDTH / 2][LENGTH / 2].setStatus(true);
-        grid[WIDTH / 2][LENGTH / 2].setIsClicked(true);
-        winnerMessage = "";
     }
 
     /**

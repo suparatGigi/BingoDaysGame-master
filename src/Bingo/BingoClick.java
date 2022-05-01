@@ -2,8 +2,13 @@ package Bingo;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Random;
 
 public class BingoClick extends BingoGrid{
+
+    static Random random = new Random();
+    public final int rowRandom = random.nextInt(0,3);
+    public final int colRandom = random.nextInt(0,3);
 
     public BingoClick() {
         super();
@@ -12,6 +17,10 @@ public class BingoClick extends BingoGrid{
         indentY = 240;
         initializeGrid();
 
+        //middle spot is freebie
+        grid[rowRandom][colRandom].setStatus(true);
+        grid[rowRandom][colRandom].setIsClicked(true);
+        winnerMessage = "";
     }
 
     /**
@@ -21,7 +30,7 @@ public class BingoClick extends BingoGrid{
         for (int row = 0; row < WIDTH; row++) {
             for (int col = 0; col < LENGTH; col++) {
                 BingoSquare square = grid[row][col];
-                if (row == 2 && col == 2) {}
+                if (row == rowRandom && col == colRandom) {}
                 else if (square.contains(x, y)) {
                     if (square.getIsClicked()) {
                         square.setIsClicked(false);
@@ -83,14 +92,14 @@ public class BingoClick extends BingoGrid{
 
                 //highlights the square if it is part of the winning sequence
                 if (square.getIsWinner()) {
-                    g2.setColor(Color.GREEN);
+                    g2.setColor(Color.MAGENTA);
                     g2.fill(square);
                     g2.setColor(Color.BLACK);
                     g2.draw(square);
                 }
 
                 //freebie
-                if (row == 2 && col == 2) {
+                if (row == rowRandom && col == colRandom) {
                 } else {
                     int value = grid[row][col].getValue();
                     int xCoord = (int) square.getX() + (SQUARE_SIZE / 4);
@@ -110,8 +119,6 @@ public class BingoClick extends BingoGrid{
         //prints message if grid has won
         g2.setColor(Color.RED);
         g2.drawString(winnerMessage, 70, 300);
-
-
 
     }
 }
