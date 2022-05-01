@@ -133,7 +133,7 @@ public class BingoGame extends JFrame{
 
         mouseListener = new MouseClickListener();
         timer = new MyTimer();
-        DELAY = 3000;
+        DELAY = 2500;
         Timer t = new Timer(DELAY, timer);
         t.start();
 
@@ -185,6 +185,7 @@ public class BingoGame extends JFrame{
             Object source = event.getSource();
             if (source == reset) { //resets the boards and the bingo number callings
                 clickGrid.initializeGrid();
+                clickGrid.hightlightfree();
                 bingoNumbers.numbers.clear();
                 winner = false;
             } else if (source == bingo) { //checks if the human grid has won

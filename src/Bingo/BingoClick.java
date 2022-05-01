@@ -17,6 +17,10 @@ public class BingoClick extends BingoGrid{
         indentY = 240;
         initializeGrid();
 
+        hightlightfree();
+    }
+
+    public void hightlightfree(){
         //middle spot is freebie
         grid[rowRandom][colRandom].setStatus(true);
         grid[rowRandom][colRandom].setIsClicked(true);
@@ -114,7 +118,11 @@ public class BingoClick extends BingoGrid{
 
         //prints meseage high score
         String highScoreMessage = " " + BingoScore.getHighScore();
-        g2.drawString(highScoreMessage, 1120,68);
+        g2.drawString(highScoreMessage, 1050,58);
+
+        //prints message score you will get
+        String nextUnlockMessage = " " + BingoScore.scoreYouWillGet();
+        g2.drawString(nextUnlockMessage, 1020,360);
 
         //prints message if grid has won
         g2.setColor(Color.RED);

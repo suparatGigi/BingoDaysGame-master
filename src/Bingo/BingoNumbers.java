@@ -2,6 +2,10 @@ package Bingo;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -48,16 +52,17 @@ public class BingoNumbers extends JComponent {
         g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
 
         int fontSize = 45;
-        int bigFont = 80;
+        int bigFont = 70;
         Font font = new Font("SansSerif", Font.PLAIN, fontSize);
         g2.setFont(font);
 
-        String call = "Calling: ";
-        g2.drawString(call, 70, 225);
+//        String call = "Calling: ";
+//        g2.drawString(call, 70, 225);
+
         if (!numbers.isEmpty()) {
             int number = numbers.get(numbers.size() - 1);
-            int xCoord = 240;
-            int yCoord = 230;
+            int xCoord = 165;
+            int yCoord = 470;
             g2.setFont(new Font("SansSerif", Font.BOLD, bigFont));
             if (number <= 15) {
                 g2.drawString("D-" + number, xCoord, yCoord);
