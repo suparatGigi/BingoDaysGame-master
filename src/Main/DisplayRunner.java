@@ -13,6 +13,7 @@ public class DisplayRunner {
     public static URL Message2Music = DisplayRunner.class.getClassLoader().getResource("sound/Here-are-7-days.wav");
     public static URL Message3Music = DisplayRunner.class.getClassLoader().getResource("sound/Ready.wav");
     public static URL bingoMusic = DisplayRunner.class.getClassLoader().getResource("sound/Bingo.wav");
+    public static URL gameoverMusic = DisplayRunner.class.getClassLoader().getResource("sound/gameover.wav");
     public static URL currentMusic;
     public static Music music = new Music();
     public static MessageSound ms = new MessageSound();

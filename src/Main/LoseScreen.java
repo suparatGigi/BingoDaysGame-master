@@ -1,6 +1,5 @@
 package Main;
 
-import Bingo.BingoGame;
 import Bingo.BingoScore;
 
 import javax.swing.*;
@@ -11,6 +10,10 @@ import java.awt.event.ActionListener;
 public class LoseScreen extends JPanel {
 
     public LoseScreen() {
+
+        //add sound
+        DisplayRunner.currentMusic = DisplayRunner.gameoverMusic;
+        DisplayRunner.playMessage(DisplayRunner.currentMusic);
 
         //create continue button
         JButton continueButton = new JButton();
@@ -51,15 +54,6 @@ public class LoseScreen extends JPanel {
 
         Font font = new Font("Franxurter-w11D9.ttf", Font.PLAIN, 45);
         g2.setFont(font);
-//
-//        try{
-//            Font font = Font.createFont(Font.TRUETYPE_FONT, new FileInputStream("font/Franxurter-w11D9.ttf"));
-//            font = font.deriveFont(Font.PLAIN, 100);
-//            g2.setFont(font);
-//        }
-//        catch (Exception error){
-//
-//        }
 
         //prints message high score:
         String highScoreMessage = " "+ BingoScore.getHighScore();

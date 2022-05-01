@@ -1,6 +1,6 @@
 package Main;
 
-import Bingo.BingoGame;
+
 import Bingo.BingoScore;
 
 import javax.swing.*;
@@ -12,7 +12,7 @@ public class WinScreen extends JPanel {
 
     public WinScreen() {
 
-        //add message sound
+        //add sound
         DisplayRunner.currentMusic = DisplayRunner.bingoMusic;
         DisplayRunner.playMessage(DisplayRunner.currentMusic);
 
@@ -55,15 +55,6 @@ public class WinScreen extends JPanel {
 
         Font font = new Font("Franxurter-w11D9.ttf", Font.PLAIN, 45);
         g2.setFont(font);
-//
-//        try{
-//            Font font = Font.createFont(Font.TRUETYPE_FONT, new FileInputStream("font/Franxurter-w11D9.ttf"));
-//            font = font.deriveFont(Font.PLAIN, 100);
-//            g2.setFont(font);
-//        }
-//        catch (Exception error){
-//
-//        }
 
         //prints message high score:
         String highScoreMessage = " "+ BingoScore.getHighScore();

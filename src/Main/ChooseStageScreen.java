@@ -1,6 +1,6 @@
 package Main;
 
-import Bingo.BingoNumbers;
+
 import Bingo.BingoScore;
 import Stage.MondayStage;
 
@@ -8,13 +8,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.FileInputStream;
 import java.awt.Font;
-import java.io.IOException;
 
 public class ChooseStageScreen extends JPanel {
-    public static JPanel chooseStageScreen;
-    private JLabel chooseStageBackground;
+
     public static int numStage = 0;
 
     public void paint(Graphics g){
@@ -43,32 +40,12 @@ public class ChooseStageScreen extends JPanel {
         g.drawImage(fri,300, 390, 200, 248,this);
         g.drawImage(sat,550, 390, 200, 248,this);
         g.drawImage(sun,800, 390, 200, 248,this);
-/*
-        //lock
-        Image ll = t.getImage("src/image/lockIcon.png");
-        Image lsat = t.getImage("src/image/lockIconsat.png");
 
-        g.drawImage(ll,401,130,200,208,this); //tue
-        g.drawImage(ll,649,130,210,213,this); //wed
-        g.drawImage(ll,899,130,210,213,this); //thu
-        g.drawImage(ll,300,393,210,213,this); //fri
-        g.drawImage(ll,800,393,210,213,this); //sun
-        g.drawImage(lsat,550,393,200,245,this); //sat
-*/
         Graphics2D g2 = (Graphics2D) g;
         g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
 
         Font font = new Font("Franxurter-w11D9.ttf", Font.PLAIN, 45);
         g2.setFont(font);
-
-//        try{
-//            Font font = Font.createFont(Font.TRUETYPE_FONT, new FileInputStream("font/Franxurter-w11D9.ttf"));
-//            font = font.deriveFont(Font.PLAIN, 100);
-//            g2.setFont(font);
-//        }
-//        catch (Exception error){
-//
-//        }
 
         //prints message high score:
         String highScoreMessage = " "+ BingoScore.getHighScore();
@@ -188,16 +165,9 @@ public class ChooseStageScreen extends JPanel {
             ImageIcon tuesdayButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/tue.png")); // เพิ่มรูปปุ่ม
             tuesdayButton.setIcon(tuesdayButtonIcon);
 
-            //lock button
-//            JLabel lockbutton = new JLabel();
-//            lockbutton.setBounds(401,130,200,208);
-//            ImageIcon lockIcon = new ImageIcon(getClass().getClassLoader().getResource("image/lockIcon.png"));
-//            lockbutton.setIcon(lockIcon);
-//            MainDisplay.window.add(lockbutton);
+
 
             if(BingoScore.getHighScore() >= 20) {
-                //MainDisplay.window.remove(lockbutton);
-                //MainDisplay.window.remove(ll);
                 tuesdayButton.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
@@ -224,15 +194,7 @@ public class ChooseStageScreen extends JPanel {
         ImageIcon wednesdayButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/wed.png")); // เพิ่มรูปปุ่ม
         wednesdayButton.setIcon(wednesdayButtonIcon);
 
-        //lock button
-//        JLabel lockbutton = new JLabel();
-//        lockbutton.setBounds(649,130,210,213);
-//        ImageIcon lockIcon = new ImageIcon(getClass().getClassLoader().getResource("image/lockIcon.png"));
-//        lockbutton.setIcon(lockIcon);
-//        MainDisplay.window.add(lockbutton);
-
         if(BingoScore.getHighScore() >= 60) {
-            //MainDisplay.window.remove(lockbutton);
             wednesdayButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -259,15 +221,7 @@ public class ChooseStageScreen extends JPanel {
         ImageIcon thursdayButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/thu.png")); // เพิ่มรูปปุ่ม
         thursdayButton.setIcon(thursdayButtonIcon);
 
-        //lock button
-//        JLabel lockbutton = new JLabel();
-//        lockbutton.setBounds(899,130,210,213);
-//        ImageIcon lockIcon = new ImageIcon(getClass().getClassLoader().getResource("image/lockIcon.png"));
-//        lockbutton.setIcon(lockIcon);
-//        MainDisplay.window.add(lockbutton);
-
         if(BingoScore.getHighScore() >= 110) {
-            //MainDisplay.window.remove(lockbutton);
             thursdayButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -294,15 +248,7 @@ public class ChooseStageScreen extends JPanel {
         ImageIcon fridayButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/fri.png")); // เพิ่มรูปปุ่ม
         fridayButton.setIcon(fridayButtonIcon);
 
-        //lock button
-//        JLabel lockbutton = new JLabel();
-//        lockbutton.setBounds(300,393,210,213);
-//        ImageIcon lockIcon = new ImageIcon(getClass().getClassLoader().getResource("image/lockIcon.png"));
-//        lockbutton.setIcon(lockIcon);
-//        MainDisplay.window.add(lockbutton);
-
         if(BingoScore.getHighScore() >= 200) {
-            //MainDisplay.window.remove(lockbutton);
             fridayButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -329,15 +275,7 @@ public class ChooseStageScreen extends JPanel {
         ImageIcon saturdayButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/sat.png")); // เพิ่มรูปปุ่ม
         saturdayButton.setIcon(saturdayButtonIcon);
 
-        //lock button
-//        JLabel lockbutton = new JLabel();
-//        lockbutton.setBounds(550,393,200,245);
-//        ImageIcon lockIcon = new ImageIcon(getClass().getClassLoader().getResource("image/lockIconsat.png"));
-//        lockbutton.setIcon(lockIcon);
-//        MainDisplay.window.add(lockbutton);
-
         if(BingoScore.getHighScore() >= 300) {
-            //MainDisplay.window.remove(lockbutton);
             saturdayButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -365,15 +303,7 @@ public class ChooseStageScreen extends JPanel {
         ImageIcon sundayButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/sun.png")); // เพิ่มรูปปุ่ม
         sundayButton.setIcon(sundayButtonIcon);
 
-        //lock button
-//        JLabel lockbutton = new JLabel();
-//        lockbutton.setBounds(800,393,210,213);
-//        ImageIcon lockIcon = new ImageIcon(getClass().getClassLoader().getResource("image/lockIcon.png"));
-//        lockbutton.setIcon(lockIcon);
-//        MainDisplay.window.add(lockbutton);
-
         if(BingoScore.getHighScore() >= 400) {
-            //MainDisplay.window.remove(lockbutton);
             sundayButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {

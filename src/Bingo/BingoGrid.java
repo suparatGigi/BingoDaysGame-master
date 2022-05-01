@@ -1,7 +1,6 @@
 package Bingo;
 
 import javax.swing.*;
-import java.awt.*;
 import java.util.ArrayList;
 
 
@@ -11,7 +10,7 @@ public class BingoGrid extends JComponent {
     protected final int SQUARE_SIZE = 80;
     protected final int LENGTH = 4;
     protected final int WIDTH = 4;
-    public static final String[] BINGO = {"D", "A", "Y", "S"};
+    //public static final String[] BINGO = {"D", "A", "Y", "S"};
     public int indentX;
     public int indentY;
     protected String winnerMessage;
@@ -19,7 +18,7 @@ public class BingoGrid extends JComponent {
 
     public BingoGrid() {
         grid = new BingoSquare[WIDTH][LENGTH];
-        bingoGridNumbers = new ArrayList<Integer>();
+        bingoGridNumbers = new ArrayList<>();
         winnerMessage = "";
 
     }

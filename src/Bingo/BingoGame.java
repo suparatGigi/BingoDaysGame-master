@@ -2,7 +2,6 @@ package Bingo;
 
 import Main.ChooseStageScreen;
 import Main.LoseScreen;
-import Main.MainDisplay;
 import Main.WinScreen;
 
 import javax.swing.*;
@@ -14,16 +13,12 @@ import java.awt.event.MouseListener;
 
 public class BingoGame extends JFrame{
 
-    public static final int WIDTH = 1295;
-    public static final int LENGTH = 715;
-
     private JButton reset;
     private JButton bingo;
     private JButton nextNum;
     private JButton start;
     private JButton stop;
     private Container layout;
-    private Container boxLayout;
 
     private BingoNumbers bingoNumbers;
     private BingoClick clickGrid;
@@ -200,7 +195,7 @@ public class BingoGame extends JFrame{
                         else if (ChooseStageScreen.numStage == 5 )  BingoScore.highScore += 60;
                         else if (ChooseStageScreen.numStage == 6 )  BingoScore.highScore += 70;
                         else if (ChooseStageScreen.numStage == 7 )  BingoScore.highScore += 80;
-                        if(winner == true) {
+                        if(winner) {
                             getContentPane().removeAll();
                             add(new WinScreen());
                             validate();
