@@ -2,6 +2,7 @@ package Bingo;
 
 import Main.ChooseStageScreen;
 import Main.LoseScreen;
+import Main.MainDisplay;
 import Main.WinScreen;
 
 import javax.swing.*;
@@ -210,6 +211,10 @@ public class BingoGame extends JFrame{
                     clickGrid.hightlightfree();
                     bingoNumbers.numbers.clear();
                     winner = false;
+
+                    MainDisplay.window.getContentPane().removeAll();
+                    MainDisplay.window.add(new ChooseStageScreen());
+                    MainDisplay.window.validate();
                 }
             } else if (source == nextNum) { //calls the next bingo number and checks for winner
                 if (!winner) {
