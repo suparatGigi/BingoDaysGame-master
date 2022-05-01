@@ -49,7 +49,7 @@ public class ChooseStageScreen extends JPanel {
 
         //prints message high score:
         String highScoreMessage = " "+ BingoScore.getHighScore();
-        g2.drawString(highScoreMessage, 1148,65);
+        g2.drawString(highScoreMessage, 1140,65);
 
         //prints message NEXT UNLOCKED
         String nextUnlockMessage = " " + BingoScore.getNextUnlocked();
