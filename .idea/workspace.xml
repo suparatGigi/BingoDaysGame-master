@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6f44a18-cc1c-4640-a0a1-37c6ec2f4a94" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-
-=======
-      <change beforePath="$PROJECT_DIR$/src/Bingo/BingoClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoClick.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bingo/BingoGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bingo/BingoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bingo/BingoScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bingo/BingoSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stage/MondayStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage/MondayStage.java" afterDir="false" />
->>>>>>> afb89b8baf663bb5c65359d393fb533d499274e6
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,11 +88,9 @@
       <workItem from="1651239339687" duration="11842000" />
       <workItem from="1651284641481" duration="10973000" />
       <workItem from="1651309084681" duration="5820000" />
-
       <workItem from="1651323448910" duration="10208000" />
-=======
       <workItem from="1651329849411" duration="3435000" />
->>>>>>> afb89b8baf663bb5c65359d393fb533d499274e6
+      <workItem from="1651381354951" duration="299000" />
     </task>
     <servers />
   </component>

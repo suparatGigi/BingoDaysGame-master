@@ -1,5 +1,7 @@
 package Main;
 
+import Bingo.BingoGame;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -18,6 +20,6 @@ public class MainDisplay {
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //กดปิดwindow
 
         //begin with start screen
-        window.add(new StartScreen());
+        window.add(new BingoGame());
     }
 }
