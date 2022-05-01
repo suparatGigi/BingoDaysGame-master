@@ -13,11 +13,11 @@ public class BingoScore {
 
     public static int getNextUnlocked() {
         if (getHighScore() < 20) return 20;
-        else if (getHighScore() >= 20 && getHighScore() < 59) return 60;
-        else if (getHighScore() >= 60 && getHighScore() < 109) return 110;
-        else if (getHighScore() >= 110 && getHighScore() < 199) return 200;
-        else if (getHighScore() >= 200 && getHighScore() < 299) return 300;
-        else if (getHighScore() >= 300 && getHighScore() < 399) return 400;
+        else if (getHighScore() >= 20 && getHighScore() < 49) return 50;
+        else if (getHighScore() >= 50 && getHighScore() < 89) return 90;
+        else if (getHighScore() >= 90 && getHighScore() < 149) return 150;
+        else if (getHighScore() >= 150 && getHighScore() < 249) return 250;
+        else if (getHighScore() >= 250 && getHighScore() < 349) return 350;
         else  //"YOU UNLOCKED ALL LEVELS"
             return 0;
     }

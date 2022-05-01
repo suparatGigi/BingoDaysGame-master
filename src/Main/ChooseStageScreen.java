@@ -194,7 +194,7 @@ public class ChooseStageScreen extends JPanel {
         ImageIcon wednesdayButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/wed.png")); // เพิ่มรูปปุ่ม
         wednesdayButton.setIcon(wednesdayButtonIcon);
 
-        if(BingoScore.getHighScore() >= 60) {
+        if(BingoScore.getHighScore() >= 50) {
             wednesdayButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -221,7 +221,7 @@ public class ChooseStageScreen extends JPanel {
         ImageIcon thursdayButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/thu.png")); // เพิ่มรูปปุ่ม
         thursdayButton.setIcon(thursdayButtonIcon);
 
-        if(BingoScore.getHighScore() >= 110) {
+        if(BingoScore.getHighScore() >= 90) {
             thursdayButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -248,7 +248,7 @@ public class ChooseStageScreen extends JPanel {
         ImageIcon fridayButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/fri.png")); // เพิ่มรูปปุ่ม
         fridayButton.setIcon(fridayButtonIcon);
 
-        if(BingoScore.getHighScore() >= 200) {
+        if(BingoScore.getHighScore() >= 150) {
             fridayButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -275,7 +275,7 @@ public class ChooseStageScreen extends JPanel {
         ImageIcon saturdayButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/sat.png")); // เพิ่มรูปปุ่ม
         saturdayButton.setIcon(saturdayButtonIcon);
 
-        if(BingoScore.getHighScore() >= 300) {
+        if(BingoScore.getHighScore() >= 250) {
             saturdayButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -303,7 +303,7 @@ public class ChooseStageScreen extends JPanel {
         ImageIcon sundayButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/sun.png")); // เพิ่มรูปปุ่ม
         sundayButton.setIcon(sundayButtonIcon);
 
-        if(BingoScore.getHighScore() >= 400) {
+        if(BingoScore.getHighScore() >= 350) {
             sundayButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {

@@ -207,15 +207,17 @@ public class BingoGame extends JFrame{
                             validate();
                         }
                     }
-                    clickGrid.initializeGrid();
-                    clickGrid.hightlightfree();
-                    bingoNumbers.numbers.clear();
-                    winner = false;
 
-                    MainDisplay.window.getContentPane().removeAll();
-                    MainDisplay.window.add(new ChooseStageScreen());
-                    MainDisplay.window.validate();
                 }
+                clickGrid.initializeGrid();
+                clickGrid.hightlightfree();
+                bingoNumbers.numbers.clear();
+                winner = false;
+                startGame = false;
+
+                MainDisplay.window.getContentPane().removeAll();
+                MainDisplay.window.add(new ChooseStageScreen());
+                MainDisplay.window.validate();
             } else if (source == nextNum) { //calls the next bingo number and checks for winner
                 if (!winner) {
                     bingoNumbers.generateNumber();
